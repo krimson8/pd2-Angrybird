@@ -101,10 +101,17 @@ void MainWindow::build()
 
     restartgg = new QPushButton;
     restartgg->setText("RESTART");
-    restartgg->setGeometry(740, 10, 100, 50);
+    restartgg->setGeometry(740, 10, 100, 20);
     restartgg->setStyleSheet("color:black; background-color: transparent; font: bold 20px;");
     connect(restartgg, SIGNAL(clicked(bool)), this, SLOT(restartGame()));
     scene->addWidget(restartgg);
+
+    exitgg = new QPushButton;
+    exitgg->setText("EXIT");
+    exitgg->setGeometry(740, 31, 100, 20);
+    exitgg->setStyleSheet("color:black; background-color: transparent; font: bold 20px;");
+    connect(exitgg, SIGNAL(clicked(bool)), this, SLOT(exitGame()));
+    scene->addWidget(exitgg);
 }
 
 
@@ -283,4 +290,9 @@ void MainWindow::restartGame(){
 
     build();
     resetValue();
+}
+
+void MainWindow::exitGame(){
+    //emit quitGame();
+    close();
 }

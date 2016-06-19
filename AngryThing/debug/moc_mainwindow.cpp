@@ -87,7 +87,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->tick(); break;
         case 2: _t->QUITSLOT(); break;
         case 3: _t->restartGame(); break;
-        //case 4: _t->exitGame(); break;
+        case 4: _t->exitGame(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

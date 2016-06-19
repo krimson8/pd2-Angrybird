@@ -65,7 +65,7 @@ private:
     QLabel *instruct;
     QLabel *score;
     QLabel *speed1;
-    QPushButton *restartgg;
+    QPushButton *restartgg , *exitgg;
 };
 
 #endif // MAINWINDOW_H
